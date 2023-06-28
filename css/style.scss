@@ -1,0 +1,249 @@
+// desktop viweport
+$desk: 100/1512;
+
+//Varivales
+$black_color: #2E2E2E;
+$red_color: #CB2229;
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Outfit', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Common Class */
+.content_container{
+    max-width: 1358 * $desk + vw;
+    margin: 0 auto;
+}
+
+.font-14{
+    font-size: 14 * $desk + vw;
+}
+
+.font-18{
+    font-size: 18 * $desk + vw;
+}
+
+.font-32{
+    font-size: 32 * $desk + vw;
+}
+
+.red_txt{
+    color: $red_color;
+}
+
+/* Header Css */
+header{
+    position: relative;
+    z-index: 10;
+    background: transparent;
+
+    &.sticky{
+        position: fixed;
+        width: 100%;
+        background: #fff;
+    }
+
+    .main_navbar{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: flex-end;
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        align-items: center;
+        position: relative;
+
+        .left_navbar{
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 2;
+
+            .logo_area img{
+                display: block;
+                width: 158 * $desk + vw;
+                height: 103 * $desk + vw;
+            }
+        }
+
+        .right_navbar nav ul{
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            align-items: center;
+
+            li{
+                &:not(:last-child){
+                    margin-right: 50 * $desk + vw;
+                }
+
+                a{
+                    text-decoration: none;
+                    font-weight: 700;
+                    line-height: 20 * $desk + vw;
+                    color: $black_color;
+                    display: block;
+                    padding: 20 * $desk + vw 0;
+                    text-transform: uppercase;
+                }
+                &:hover{
+                    a{
+                        color: $red_color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Banner Css */
+
+.banner_area{
+    position: relative;
+
+    .banner_wave{
+        position: absolute;
+        bottom: -400 * $desk + vw;
+        left: 0;
+        width: 100vw;
+    }
+}
+
+/* Main About Area */
+
+.about_main_area{
+    padding: 280 * $desk + vw 0 220 * $desk + vw;
+    position: relative;
+
+    .inner_about_area{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+
+        .left_about_area{
+            flex: 0 0 45%;
+            max-width: 45%;
+            position: relative;
+
+            .bold_text_area h2{
+                text-shadow: -1 * $desk + vw 1 * $desk + vw 0 #000,
+                                1 * $desk + vw 1 * $desk + vw 0 #000,
+                                1 * $desk + vw -1 * $desk + vw 0 #000,
+                                -1 * $desk + vw -1 * $desk + vw 0 #000;
+                font-weight: 700;
+                color: #fff;
+                font-size: 100 * $desk + vw;
+                line-height: 100 * $desk + vw;
+                opacity: 0.1;
+            }
+
+            .semibold_text_area{
+                position: absolute;
+                top: 65 * $desk + vw;
+                left: 0;
+
+                h2{
+                    font-size: 64 * $desk + vw;
+                    line-height: 64 * $desk + vw;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .right_about_area{
+            flex: 0 0 55%;
+            max-width: 55%;
+
+            .about_area_content{
+                .red_txt{
+                    font-weight: 400;
+                }
+
+                .para{
+                    margin: 12 * $desk + vw 0 22 * $desk + vw;
+                    font-size: 24 * $desk + vw;
+                    line-height: 34 * $desk + vw;
+                    font-weight: 500;
+                }
+
+                .secondary_para{
+                    font-weight: 400;
+                    line-height: 28 * $desk + vw;
+                    margin-bottom: 22 * $desk + vw;
+                }
+
+                .readmorebtn{
+                    display: flex;
+                    align-items: center;
+
+                    span{
+                        line-height: 21 * $desk + vw;
+                        font-weight: 700;
+                    }
+                    svg{
+                        color: $red_color;
+                        font-size: 30 * $desk + vw;
+                        margin-top: 2 * $desk + vw;
+                    }
+                }
+            }
+        }
+    }
+}
