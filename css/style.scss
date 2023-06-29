@@ -209,8 +209,8 @@ table {
         text-align: center;
 
         @media #{$mobile}{
-            font-size: 60 * $desk + vw;
-            line-height: 70 * $desk + vw;
+            font-size: 70 * $desk + vw;
+            line-height: 80 * $desk + vw;
         }
 
     }
@@ -572,8 +572,12 @@ header {
             max-width: 33.33%;
 
             @media #{$mobile} {
-                flex: 0 0 50%;
-                max-width: 50%;
+                flex: 0 0 100%;
+                max-width: 100%;
+
+                &:not(:last-child){
+                    margin-bottom: 60 * $desk + vw;
+                }
             }
 
             .business_box {
@@ -600,6 +604,7 @@ header {
 
             img {
                 display: block;
+                width: 100vw;
             }
 
             .business_box_content {
@@ -616,29 +621,34 @@ header {
                 top: 60%;
                 left: 0;
                 height: 100%;
-                padding: 2.344vw 2.344vw 3.646vw;
+                padding: 56 * $desk + vw 45 * $desk + vw 65 * $desk + vw;
                 transition: 0.5s ease-in-out all;
+
+                @media #{$mobile}{
+                    padding: 96 * $desk + vw 85 * $desk + vw 105 * $desk + vw; 
+                    top: 70%;
+                }
 
                 .business_box_content_head {
                     h3 {
                         font-weight: 700;
-                        line-height: 2.188vw;
+                        line-height: 23 * $desk + vw;
                         color: #fff;
-                        margin-bottom: 0.521vw;
+                        margin-bottom: 20 * $desk + vw;
 
                         @media #{$mobile}{
-                            line-height: 4vw;
-                            margin-bottom: 1.2vw;
+                            line-height: 45 * $desk + vw;
+                            margin-bottom: 30 * $desk + vw;
                         }
                     }
 
                     p {
                         color: #fff;
                         font-weight: 400;
-                        line-height: 1.458vw;
+                        line-height: 24 * $desk + vw;
 
                         @media #{$mobile}{
-                            line-height: 2.8vw;
+                            line-height: 62 * $desk + vw;
                         }
                     }
                 }
@@ -647,10 +657,10 @@ header {
                     p {
                         color: #fff;
                         font-weight: 400;
-                        line-height: 1.458vw;
+                        line-height: 24 * $desk + vw;
 
                         @media #{$mobile}{
-                            line-height: 2.8vw;
+                            line-height: 62 * $desk + vw;
                         }
                     }
 

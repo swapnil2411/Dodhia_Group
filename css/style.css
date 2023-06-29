@@ -202,8 +202,8 @@ table {
 }
 @media (max-width: 600px) {
   .sec_header .title {
-    font-size: 3.9682539683vw;
-    line-height: 4.6296296296vw;
+    font-size: 4.6296296296vw;
+    line-height: 5.291005291vw;
   }
 }
 
@@ -498,8 +498,11 @@ header .main_navbar .right_navbar nav ul li:hover a {
 }
 @media (max-width: 600px) {
   .our_business_area .business_area_flex .business_col {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .our_business_area .business_area_flex .business_col:not(:last-child) {
+    margin-bottom: 3.9682539683vw;
   }
 }
 .our_business_area .business_area_flex .business_col .business_box {
@@ -522,6 +525,7 @@ header .main_navbar .right_navbar nav ul li:hover a {
 }
 .our_business_area .business_area_flex .business_col img {
   display: block;
+  width: 100vw;
 }
 .our_business_area .business_area_flex .business_col .business_box_content {
   position: absolute;
@@ -531,39 +535,45 @@ header .main_navbar .right_navbar nav ul li:hover a {
   top: 60%;
   left: 0;
   height: 100%;
-  padding: 2.344vw 2.344vw 3.646vw;
+  padding: 3.7037037037vw 2.9761904762vw 4.2989417989vw;
   transition: 0.5s ease-in-out all;
+}
+@media (max-width: 600px) {
+  .our_business_area .business_area_flex .business_col .business_box_content {
+    padding: 6.3492063492vw 5.6216931217vw 6.9444444444vw;
+    top: 70%;
+  }
 }
 .our_business_area .business_area_flex .business_col .business_box_content .business_box_content_head h3 {
   font-weight: 700;
-  line-height: 2.188vw;
+  line-height: 1.5211640212vw;
   color: #fff;
-  margin-bottom: 0.521vw;
+  margin-bottom: 1.3227513228vw;
 }
 @media (max-width: 600px) {
   .our_business_area .business_area_flex .business_col .business_box_content .business_box_content_head h3 {
-    line-height: 4vw;
-    margin-bottom: 1.2vw;
+    line-height: 2.9761904762vw;
+    margin-bottom: 1.9841269841vw;
   }
 }
 .our_business_area .business_area_flex .business_col .business_box_content .business_box_content_head p {
   color: #fff;
   font-weight: 400;
-  line-height: 1.458vw;
+  line-height: 1.5873015873vw;
 }
 @media (max-width: 600px) {
   .our_business_area .business_area_flex .business_col .business_box_content .business_box_content_head p {
-    line-height: 2.8vw;
+    line-height: 4.1005291005vw;
   }
 }
 .our_business_area .business_area_flex .business_col .business_box_content .business_box_content_body p {
   color: #fff;
   font-weight: 400;
-  line-height: 1.458vw;
+  line-height: 1.5873015873vw;
 }
 @media (max-width: 600px) {
   .our_business_area .business_area_flex .business_col .business_box_content .business_box_content_body p {
-    line-height: 2.8vw;
+    line-height: 4.1005291005vw;
   }
 }
 .our_business_area .business_area_flex .business_col .business_box_content .business_box_content_body .white_txt {
