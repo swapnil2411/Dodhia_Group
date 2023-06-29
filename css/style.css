@@ -694,6 +694,11 @@ header .main_navbar .right_navbar nav ul li:hover a {
   transform: scale(0);
   transform-origin: left;
 }
+@media (max-width: 600px) {
+  .awards_area .awards_carousel .owl-item .item .box_boder_top {
+    height: 0.1322751323vw;
+  }
+}
 .awards_area .awards_carousel .owl-item .item:hover .box_boder_top {
   transform: scale(1);
 }
@@ -713,6 +718,7 @@ header .main_navbar .right_navbar nav ul li:hover a {
 @media (max-width: 600px) {
   .awards_area .awards_carousel .owl-item .item .box_boder_right {
     height: 17.1957671958vw;
+    width: 0.1322751323vw;
   }
 }
 .awards_area .awards_carousel .owl-item .item:hover .box_boder_right {
@@ -734,6 +740,7 @@ header .main_navbar .right_navbar nav ul li:hover a {
 @media (max-width: 600px) {
   .awards_area .awards_carousel .owl-item .item .box_boder_bottom {
     top: calc(40% + 17.1957671958vw);
+    height: 0.1322751323vw;
   }
 }
 .awards_area .awards_carousel .owl-item .item:hover .box_boder_bottom {
@@ -755,6 +762,7 @@ header .main_navbar .right_navbar nav ul li:hover a {
 @media (max-width: 600px) {
   .awards_area .awards_carousel .owl-item .item .box_boder_left {
     height: 17.1957671958vw;
+    width: 0.1322751323vw;
   }
 }
 .awards_area .awards_carousel .owl-item .item:hover .box_boder_left {

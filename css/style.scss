@@ -817,6 +817,10 @@ header {
                     transition: 0.3s ease-in all;
                     transform: scale(0);
                     transform-origin: left;
+
+                    @media #{$mobile}{
+                        height: 2 * $desk + vw;
+                    }
                 }
 
                 &:hover .box_boder_top {
@@ -838,6 +842,7 @@ header {
 
                     @media #{$mobile}{
                         height: $red_line_one_mobile_70;
+                        width: 2 * $desk + vw;
                     }
                 }
 
@@ -860,6 +865,7 @@ header {
 
                     @media #{$mobile}{
                         top: calc(40% + $red_line_one_mobile_70);
+                        height: 2 * $desk + vw;
                     }
                 }
 
@@ -882,6 +888,7 @@ header {
 
                     @media #{$mobile}{
                         height: $red_line_one_mobile_70;
+                        width: 2 * $desk + vw;
                     }
                 }
 
