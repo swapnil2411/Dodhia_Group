@@ -767,17 +767,23 @@ header {
 
             .owl-dot {
                 span {
-                    height: 0.781vw;
-                    width: 0.781vw;
+                    height: 15 * $desk + vw;
+                    width:  15 * $desk + vw;
                     background: $light_grey;
-                    margin: 0 0.521vw;
-                    border-radius: 1.563vw;
+                    margin: 0 10 * $desk + vw;
+                    border-radius: 15 * $desk + vw;
+
+                    @media #{$mobile}{
+                        height: 30 * $desk + vw;
+                        width:  30 * $desk + vw;
+                        border-radius: 30 * $desk + vw;
+                    }
                 }
 
                 &.active {
                     span {
                         background: $white;
-                        border: 0.052vw solid $red_color;
+                        border: 1 * $desk + vw solid $red_color;
                     }
                 }
             }
@@ -905,25 +911,32 @@ header {
 /* Certification Css */
 .certification_area{
     .title{
-        margin-bottom: 2.813vw;
+        margin-bottom: 54 * $desk + vw;
     }
 
     .certification_carousel{
         .owl-dots{
             display: block !important;
-            margin-top: 1.302vw !important;
+            margin-top: 25 * $desk + vw !important;
 
             .owl-dot{
                 span{
-                    height: 0.781vw;
-                    width: 0.781vw;
+                    height: 15 * $desk + vw;
+                    width:  15 * $desk + vw;
                     background: $light_grey;
-                    margin: 0 0.521vw;
+                    margin: 0 10 * $desk + vw;
+                    border-radius: 15 * $desk + vw;
+
+                    @media #{$mobile}{
+                        height: 30 * $desk + vw;
+                        width:  30 * $desk + vw;
+                        border-radius: 30 * $desk + vw;
+                    }
                 }
                 &.active{
                     span{
                         background: $white;
-                        border: 0.052vw solid $red_color;
+                        border: 1 * $desk + vw solid $red_color;
                     }
                 }
             }
@@ -933,12 +946,13 @@ header {
         .owl-item{
             .item{
                 box-shadow: 0.052vw 0.052vw 0.104vw $light_grey;
-                margin: 3px;
+                margin: 3 * $desk + vw;
+
                 .certification_box{
-                    padding: 1.198vw 0;
+                    padding: 23 * $desk + vw 0;
 
                     .certification_img{
-                        height:22vw;
+                        height: 423 * $desk + vw;
                         display: -webkit-box;
                         display: -moz-box;
                         display: -ms-flexbox;
@@ -950,10 +964,10 @@ header {
                         -webkit-align-items: center;
                         -webkit-box-align: center;
                         align-items: center;
-                        margin-bottom: 0.833vw;
+                        margin-bottom: 16 * $desk + vw;
 
                         img{
-                            max-width: 5.5vw;
+                            max-width: 107 * $desk + vw;
                             @media #{$mobile} {
                                 max-width: 20vw;
                             }
@@ -963,11 +977,11 @@ header {
                     .certification_txt{
                         p{
                             font-weight: 500;
-                            line-height: 1.042vw;
+                            line-height: 20 * $desk + vw;
                             text-align: center;
 
                             @media #{$mobile} {
-                                line-height: 2.083vw;
+                                line-height: 50 * $desk + vw;
                             }
                         }
                     }

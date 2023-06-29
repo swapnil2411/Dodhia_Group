@@ -647,15 +647,22 @@ header .main_navbar .right_navbar nav ul li:hover a {
   justify-content: center;
 }
 .awards_area .awards_carousel .owl-dots .owl-dot span {
-  height: 0.781vw;
-  width: 0.781vw;
+  height: 0.9920634921vw;
+  width: 0.9920634921vw;
   background: #DCDCDC;
-  margin: 0 0.521vw;
-  border-radius: 1.563vw;
+  margin: 0 0.6613756614vw;
+  border-radius: 0.9920634921vw;
+}
+@media (max-width: 600px) {
+  .awards_area .awards_carousel .owl-dots .owl-dot span {
+    height: 1.9841269841vw;
+    width: 1.9841269841vw;
+    border-radius: 1.9841269841vw;
+  }
 }
 .awards_area .awards_carousel .owl-dots .owl-dot.active span {
   background: #fff;
-  border: 0.052vw solid #CB2229;
+  border: 0.0661375661vw solid #CB2229;
 }
 .awards_area .awards_carousel .owl-item {
   padding: 0 1.5vw;
@@ -771,38 +778,46 @@ header .main_navbar .right_navbar nav ul li:hover a {
 
 /* Certification Css */
 .certification_area .title {
-  margin-bottom: 2.813vw;
+  margin-bottom: 3.5714285714vw;
 }
 .certification_area .certification_carousel .owl-dots {
   display: block !important;
-  margin-top: 1.302vw !important;
+  margin-top: 1.6534391534vw !important;
 }
 .certification_area .certification_carousel .owl-dots .owl-dot span {
-  height: 0.781vw;
-  width: 0.781vw;
+  height: 0.9920634921vw;
+  width: 0.9920634921vw;
   background: #DCDCDC;
-  margin: 0 0.521vw;
+  margin: 0 0.6613756614vw;
+  border-radius: 0.9920634921vw;
+}
+@media (max-width: 600px) {
+  .certification_area .certification_carousel .owl-dots .owl-dot span {
+    height: 1.9841269841vw;
+    width: 1.9841269841vw;
+    border-radius: 1.9841269841vw;
+  }
 }
 .certification_area .certification_carousel .owl-dots .owl-dot.active span {
   background: #fff;
-  border: 0.052vw solid #CB2229;
+  border: 0.0661375661vw solid #CB2229;
 }
 .certification_area .certification_carousel .owl-item .item {
   box-shadow: 0.052vw 0.052vw 0.104vw #DCDCDC;
-  margin: 3px;
+  margin: 0.1984126984vw;
 }
 .certification_area .certification_carousel .owl-item .item .certification_box {
-  padding: 1.198vw 0;
+  padding: 1.5211640212vw 0;
 }
 .certification_area .certification_carousel .owl-item .item .certification_box .certification_img {
-  height: 22vw;
+  height: 27.9761904762vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0.833vw;
+  margin-bottom: 1.0582010582vw;
 }
 .certification_area .certification_carousel .owl-item .item .certification_box .certification_img img {
-  max-width: 5.5vw;
+  max-width: 7.0767195767vw;
 }
 @media (max-width: 600px) {
   .certification_area .certification_carousel .owl-item .item .certification_box .certification_img img {
@@ -811,11 +826,11 @@ header .main_navbar .right_navbar nav ul li:hover a {
 }
 .certification_area .certification_carousel .owl-item .item .certification_box .certification_txt p {
   font-weight: 500;
-  line-height: 1.042vw;
+  line-height: 1.3227513228vw;
   text-align: center;
 }
 @media (max-width: 600px) {
   .certification_area .certification_carousel .owl-item .item .certification_box .certification_txt p {
-    line-height: 2.083vw;
+    line-height: 3.3068783069vw;
   }
 }/*# sourceMappingURL=style.css.map */
