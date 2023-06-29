@@ -41,8 +41,8 @@ $(document).ready(function(){
         dotsEach: true,
         responsive:{
             0:{
-                items:2.6,
-                margin:10,
+                items:2.4,
+                margin:15,
             },
             600:{
                 items:3,

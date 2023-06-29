@@ -803,7 +803,7 @@ header .main_navbar .right_navbar nav ul li:hover a {
   border: 0.0661375661vw solid #CB2229;
 }
 .certification_area .certification_carousel .owl-item .item {
-  box-shadow: 0.052vw 0.052vw 0.104vw #DCDCDC;
+  box-shadow: 0.0661375661vw 0.0661375661vw 0.1984126984vw #DCDCDC;
   margin: 0.1984126984vw;
 }
 .certification_area .certification_carousel .owl-item .item .certification_box {

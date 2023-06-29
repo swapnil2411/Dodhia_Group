@@ -945,7 +945,7 @@ header {
 
         .owl-item{
             .item{
-                box-shadow: 0.052vw 0.052vw 0.104vw $light_grey;
+                box-shadow: 1 * $desk + vw 1 * $desk + vw 3 * $desk + vw $light_grey;
                 margin: 3 * $desk + vw;
 
                 .certification_box{
