@@ -305,6 +305,7 @@ header .main_navbar .right_navbar nav ul li:hover a {
   .about_main_area .inner_about_area .left_about_area .bold_text_area h2 {
     font-size: 11.9047619048vw;
     line-height: 11.9047619048vw;
+    text-shadow: -0.1322751323vw 0.1322751323vw 0 #000, 0.1322751323vw 0.1322751323vw 0 #000, 0.1322751323vw -0.1322751323vw 0 #000, -0.1322751323vw -0.1322751323vw 0 #000;
   }
 }
 .about_main_area .inner_about_area .left_about_area .semibold_text_area {
