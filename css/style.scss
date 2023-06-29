@@ -956,7 +956,7 @@ header {
                     padding: 23 * $desk + vw 0;
 
                     .certification_img{
-                        height: 423 * $desk + vw;
+                        height: 120 * $desk + vw;
                         display: -webkit-box;
                         display: -moz-box;
                         display: -ms-flexbox;
@@ -970,10 +970,14 @@ header {
                         align-items: center;
                         margin-bottom: 16 * $desk + vw;
 
+                        @media #{$mobile} {
+                            height: 235 * $desk + vw;
+                        }
+
                         img{
                             max-width: 107 * $desk + vw;
                             @media #{$mobile} {
-                                max-width: 20vw;
+                                max-width: 220 * $desk + vw;
                             }
                         }
                     }
@@ -992,5 +996,12 @@ header {
                 }
             }
         }
+    }
+}
+
+/* Core Team Css */
+.core_team_area{
+    .team_leader_carousel{
+        margin-top: 90 * $desk + vw;
     }
 }

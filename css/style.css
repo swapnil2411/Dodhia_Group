@@ -811,18 +811,23 @@ header .main_navbar .right_navbar nav ul li:hover a {
   padding: 1.5211640212vw 0;
 }
 .certification_area .certification_carousel .owl-item .item .certification_box .certification_img {
-  height: 27.9761904762vw;
+  height: 7.9365079365vw;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 1.0582010582vw;
+}
+@media (max-width: 600px) {
+  .certification_area .certification_carousel .owl-item .item .certification_box .certification_img {
+    height: 15.5423280423vw;
+  }
 }
 .certification_area .certification_carousel .owl-item .item .certification_box .certification_img img {
   max-width: 7.0767195767vw;
 }
 @media (max-width: 600px) {
   .certification_area .certification_carousel .owl-item .item .certification_box .certification_img img {
-    max-width: 20vw;
+    max-width: 14.5502645503vw;
   }
 }
 .certification_area .certification_carousel .owl-item .item .certification_box .certification_txt p {
@@ -834,4 +839,9 @@ header .main_navbar .right_navbar nav ul li:hover a {
   .certification_area .certification_carousel .owl-item .item .certification_box .certification_txt p {
     line-height: 3.3068783069vw;
   }
+}
+
+/* Core Team Css */
+.core_team_area .team_leader_carousel {
+  margin-top: 5.9523809524vw;
 }/*# sourceMappingURL=style.css.map */
