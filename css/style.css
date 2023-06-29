@@ -717,7 +717,7 @@ header .main_navbar .right_navbar nav ul li:hover a {
 }
 @media (max-width: 600px) {
   .awards_area .awards_carousel .owl-item .item .box_boder_right {
-    height: 17.8571428571vw;
+    height: 19.8412698413vw;
     width: 0.1322751323vw;
   }
 }
@@ -739,7 +739,7 @@ header .main_navbar .right_navbar nav ul li:hover a {
 }
 @media (max-width: 600px) {
   .awards_area .awards_carousel .owl-item .item .box_boder_bottom {
-    top: calc(40% + 17.8571428571vw);
+    top: calc(40% + 19.8412698413vw);
     height: 0.1322751323vw;
   }
 }
@@ -761,7 +761,7 @@ header .main_navbar .right_navbar nav ul li:hover a {
 }
 @media (max-width: 600px) {
   .awards_area .awards_carousel .owl-item .item .box_boder_left {
-    height: 17.8571428571vw;
+    height: 19.8412698413vw;
     width: 0.1322751323vw;
   }
 }
