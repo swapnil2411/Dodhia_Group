@@ -54,25 +54,27 @@ $(document).ready(function(){
         }
     })
     
-    // $('.team_leader_carousel').owlCarousel({
-    //     loop:true,
-    //     margin:40,
-    //     nav:false,
-    //     slideBy: 1,
-    //     dots: true,
-    //     dotsEach: true,
-    //     responsive:{
-    //         0:{
-    //             items:1
-    //         },
-    //         600:{
-    //             items:3
-    //         },
-    //         1000:{
-    //             items:4,
-    //         }
-    //     }
-    // })
+    $('.team_leader_carousel').owlCarousel({
+        loop:true,
+        margin:40,
+        nav:false,
+        slideBy: 1,
+        dots: true,
+        dotsEach: true,
+        responsive:{
+            0:{
+                items:2.7,
+                margin:30,
+            },
+            480:{
+                items:3,
+                margin:20,
+            },
+            1000:{
+                items:4,
+            }
+        }
+    })
 
     // $('.textile_range_carousel').owlCarousel({
     //     loop:true,

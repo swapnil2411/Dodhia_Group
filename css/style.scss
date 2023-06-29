@@ -11,7 +11,8 @@ $mobile: "(max-width: 600px)";
 $small_mobile: "(max-width: 480px)";
 
 $red_line_one_20: 20 * $desk + vw;
-$red_line_one_70: 140 * $desk + vw;
+$red_line_one_70: 70 * $desk + vw;
+$red_line_one_140: 140 * $desk + vw;
 $red_line_one_mobile_70: 300 * $desk + vw;
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -841,7 +842,7 @@ header {
                     content: '';
                     top: 40%;
                     width:  1 * $desk + vw;
-                    height: $red_line_one_70;
+                    height: $red_line_one_140;
                     background: $red_color;
                     right: -$red_line_one_20;
                     z-index: -1;
@@ -862,7 +863,7 @@ header {
 
                 .box_boder_bottom {
                     content: '';
-                    top: calc(40% + $red_line_one_70);
+                    top: calc(40% + $red_line_one_140);
                     width: calc(100% - $red_line_one_20);
                     height: 1 * $desk + vw;
                     background: $red_color;
@@ -887,7 +888,7 @@ header {
                     content: '';
                     top: 40%;
                     width: 1 * $desk + vw;
-                    height: $red_line_one_70;
+                    height: $red_line_one_140;
                     background: $red_color;
                     left: 40 * $desk + vw;
                     z-index: -1;
@@ -1003,5 +1004,143 @@ header {
 .core_team_area{
     .team_leader_carousel{
         margin-top: 90 * $desk + vw;
+
+        .owl-stage-outer{
+            padding: 0 30 * $desk + vw;
+
+            .leader_box{
+                width: 260 * $desk + vw;
+                position: relative;
+                padding-bottom: 70 * $desk + vw;
+                z-index: 2;
+
+                @media #{$mobile}{
+                    margin: 0 auto;
+                    width: 300 * $desk + vw;
+                }
+
+                @media #{$small_mobile}{
+                    max-width: 100%;
+                }
+
+                .box_boder_top{
+                    content: '';
+                    position: absolute;
+                    width: 50%;
+                    height: 1 * $desk + vw;
+                    top: 51 * $desk + vw;
+                    left: -30 * $desk + vw;
+                    background: $red_color;
+                    transition: 0.3s ease-in all;
+                    transform: scale(0);
+                    transform-origin: right;
+                    z-index: 0;
+                }
+
+                &:hover .box_boder_top{
+                    transform: scale(1);
+                }
+
+                .box_boder_left{
+                    content: '';
+                    position: absolute;
+                    width: 1 * $desk + vw;
+                    height: calc(100% - $red_line_one_70);
+                    top: 51 * $desk + vw;
+                    left: -30 * $desk + vw;
+                    background: $red_color;
+                    transition: 0.3s ease-in all;
+                    transition-delay: 0.3s;
+                    transform: scale(0);
+                    transform-origin: top;
+                    z-index: 0;
+                }
+
+                &:hover .box_boder_left{
+                    transform: scale(1);
+                }
+
+                .box_boder_bottom{
+                    content: '';
+                    position: absolute;
+                    width: 50%;
+                    height: 1 * $desk + vw;
+                    top: 96%;
+                    left: -30 * $desk + vw;
+                    background: $red_color;
+                    transition: 0.3s ease-in all;
+                    transition-delay: 0.6s;
+                    transform: scale(0);
+                    transform-origin: left;
+                    z-index: 0;
+                }
+
+                &:hover .box_boder_bottom{
+                    transform: scale(1);
+                }
+
+                .box_boder_right{
+                    content: '';
+                    position: absolute;
+                    width: 1 * $desk + vw;
+                    height: calc(100% - $red_line_one_70);
+                    top: 51 * $desk + vw;
+                    left: 39%;
+                    background: $red_color;
+                    transition: 0.3s ease-in all;
+                    transition-delay: 0.9s;
+                    transform: scale(0);
+                    transform-origin: bottom;
+                    z-index: 0;
+                }
+
+                &:hover .box_boder_right{
+                    transform: scale(1);
+                }
+
+                .leader_txt{
+                    background: $red_color;
+                    padding: 23 * $desk + vw 15 * $desk + vw;
+                    position: relative;
+                    z-index: 2;
+
+                    h2{
+                        font-size: 24 * $desk + vw;
+                        line-height: 29 * $desk + vw;
+                        font-weight: 500;
+                        color: $white;
+                        text-align: center;
+                    }
+
+                    p{
+                        font-weight: 400;
+                        line-height: 18 * $desk + vw;
+                        color: $white;
+                        text-align: center;
+
+                        @media #{$mobile}{
+                            font-size: 14 * $desk + vw;
+                        }
+                    }
+
+                    img{
+                        position: absolute;
+                        max-width: 100%;
+                        width: unset;
+                        top: -20 * $desk + vw;
+                        left: -20 * $desk + vw;
+                        height: 50 * $desk + vw;
+                        width: 50 * $desk + vw;
+                    }
+                }
+
+                .leader_img{
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+        }
+
+        
     }
 }
