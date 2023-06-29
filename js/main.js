@@ -11,29 +11,8 @@ $(window).scroll(function(){
 
 $(document).ready(function(){
     
-
-    // $('.certification_carousel').owlCarousel({
-    //     loop:true,
-    //     margin:40,
-    //     nav:false,
-    //     slideBy: 1,
-    //     dots: true,
-    //     dotsEach: true,
-    //     responsive:{
-    //         0:{
-    //             items:1
-    //         },
-    //         600:{
-    //             items:3
-    //         },
-    //         1000:{
-    //             items:5,
-    //         }
-    //     }
-    // })
-
     $('.awards_carousel').owlCarousel({
-        loop:false,
+        loop:true,
         margin:40,
         nav:false,
         slideBy: 1,
@@ -41,10 +20,11 @@ $(document).ready(function(){
         dotsEach: true,
         responsive:{
             0:{
-                items:2
+                items:2,
+                margin:10,
             },
             600:{
-                items:2
+                items:3
             },
             1000:{
                 items:3,
@@ -52,6 +32,27 @@ $(document).ready(function(){
         }
     })
 
+    $('.certification_carousel').owlCarousel({
+        loop:true,
+        margin:40,
+        nav:false,
+        slideBy: 1,
+        dots: true,
+        dotsEach: true,
+        responsive:{
+            0:{
+                items:2.6,
+                margin:10,
+            },
+            600:{
+                items:3,
+                margin:10,
+            },
+            1000:{
+                items:5,
+            }
+        }
+    })
     
     // $('.team_leader_carousel').owlCarousel({
     //     loop:true,
