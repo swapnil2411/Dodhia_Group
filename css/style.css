@@ -489,6 +489,11 @@ header .main_navbar .right_navbar nav ul li:hover a {
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width: 600px) {
+  .our_business_area .business_area_flex {
+    margin-top: 7.2751322751vw;
+  }
+}
 .our_business_area .business_area_flex .business_col {
   position: relative;
   height: 100%;
@@ -618,19 +623,25 @@ header .main_navbar .right_navbar nav ul li:hover a {
 
 /* Presentation Css */
 .awards_area .presentation_txt {
-  margin: 2.604vw 0 3.125vw;
+  margin: 3.4391534392vw 0 5.2248677249vw;
 }
 .awards_area .presentation_txt p {
   text-align: center;
-  font-size: 1.25vw;
-  line-height: 1.771vw;
+  font-size: 1.5873015873vw;
+  line-height: 2.2486772487vw;
   font-weight: 400;
 }
 .awards_area .presentation_txt p .bold_txt {
   font-weight: 700;
 }
+@media (max-width: 600px) {
+  .awards_area .presentation_txt p {
+    font-size: 3.1746031746vw;
+    line-height: 4.6296296296vw;
+  }
+}
 .awards_area .awards_carousel .owl-dots {
-  margin-top: 2.604vw !important;
+  margin-top: 3.5714285714vw !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -651,24 +662,33 @@ header .main_navbar .right_navbar nav ul li:hover a {
 }
 .awards_area .awards_carousel .owl-item .item {
   position: relative;
-  height: 14.188vw;
+  height: 17.5264550265vw;
+}
+@media (max-width: 600px) {
+  .awards_area .awards_carousel .owl-item .item {
+    height: 36.3756613757vw;
+  }
 }
 .awards_area .awards_carousel .owl-item .item img {
-  width: 28.125vw;
-  height: 12.188vw;
+  width: 35.7142857143vw;
+  height: 15.4761904762vw;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (max-width: 600px) {
   .awards_area .awards_carousel .owl-item .item img {
     margin: 0 auto;
+    width: 71.4285714286vw;
+    height: 30.9523809524vw;
   }
 }
 .awards_area .awards_carousel .owl-item .item .box_boder_top {
   content: "";
   top: 40%;
-  width: calc(100% - 1.042vw);
-  height: 0.052vw;
+  width: calc(100% - 1.3227513228vw);
+  height: 0.0661375661vw;
   background: #CB2229;
-  left: 2.083vw;
+  left: 2.6455026455vw;
   z-index: -1;
   transition: 0.3s ease-in all;
   transform: scale(0);
@@ -680,31 +700,41 @@ header .main_navbar .right_navbar nav ul li:hover a {
 .awards_area .awards_carousel .owl-item .item .box_boder_right {
   content: "";
   top: 40%;
-  width: 0.052vw;
-  height: 8vw;
+  width: 0.0661375661vw;
+  height: 9.2592592593vw;
   background: #CB2229;
-  right: -1.04vw;
+  right: -1.3227513228vw;
   z-index: -1;
   transition: 0.3s ease-in all;
   transition-delay: 0.3s;
   transform: scale(0);
   transform-origin: top;
 }
+@media (max-width: 600px) {
+  .awards_area .awards_carousel .owl-item .item .box_boder_right {
+    height: 17.1957671958vw;
+  }
+}
 .awards_area .awards_carousel .owl-item .item:hover .box_boder_right {
   transform: scale(1);
 }
 .awards_area .awards_carousel .owl-item .item .box_boder_bottom {
   content: "";
-  top: calc(100% - 0.5vw);
-  width: calc(100% - 1.042vw);
-  height: 0.052vw;
+  top: calc(40% + 9.2592592593vw);
+  width: calc(100% - 1.3227513228vw);
+  height: 0.0661375661vw;
   background: #CB2229;
-  left: 2.083vw;
+  left: 2.6455026455vw;
   z-index: -1;
   transition: 0.3s ease-in all;
   transition-delay: 0.6s;
   transform: scale(0);
   transform-origin: right;
+}
+@media (max-width: 600px) {
+  .awards_area .awards_carousel .owl-item .item .box_boder_bottom {
+    top: calc(40% + 17.1957671958vw);
+  }
 }
 .awards_area .awards_carousel .owl-item .item:hover .box_boder_bottom {
   transform: scale(1);
@@ -712,15 +742,20 @@ header .main_navbar .right_navbar nav ul li:hover a {
 .awards_area .awards_carousel .owl-item .item .box_boder_left {
   content: "";
   top: 40%;
-  width: 0.052vw;
-  height: 8vw;
+  width: 0.0661375661vw;
+  height: 9.2592592593vw;
   background: #CB2229;
-  left: 2.08vw;
+  left: 2.6455026455vw;
   z-index: -1;
   transition: 0.3s ease-in all;
   transition-delay: 0.9s;
   transform: scale(0);
   transform-origin: bottom;
+}
+@media (max-width: 600px) {
+  .awards_area .awards_carousel .owl-item .item .box_boder_left {
+    height: 17.1957671958vw;
+  }
 }
 .awards_area .awards_carousel .owl-item .item:hover .box_boder_left {
   transform: scale(1);

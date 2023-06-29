@@ -10,6 +10,10 @@ $light_grey: #DCDCDC;
 $mobile: "(max-width: 600px)";
 $small_mobile: "(max-width: 480px)";
 
+$red_line_one_20: 20 * $desk + vw;
+$red_line_one_70: 140 * $desk + vw;
+$red_line_one_mobile_70: 260 * $desk + vw;
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -564,6 +568,10 @@ header {
         display: flex;
         flex-wrap: wrap;
 
+        @media #{$mobile} {
+            margin-top: 110 * $desk + vw;
+        }
+
         .business_col {
             position: relative;
             height: 100%;
@@ -723,23 +731,28 @@ header {
 /* Presentation Css */
 .awards_area {
     .presentation_txt {
-        margin: 2.604vw 0 3.125vw;
+        margin: 52 * $desk + vw 0 79 * $desk + vw;
 
         p {
             text-align: center;
-            font-size: 1.250vw;
-            line-height: 1.771vw;
+            font-size: 24 * $desk + vw;
+            line-height: 34 * $desk + vw;
             font-weight: 400;
 
             .bold_txt {
                 font-weight: 700;
+            }
+
+            @media #{$mobile}{
+                font-size: 48 * $desk + vw;
+                line-height: 70 * $desk + vw;
             }
         }
     }
 
     .awards_carousel {
         .owl-dots {
-            margin-top: 2.604vw !important;
+            margin-top: 54 * $desk + vw !important;
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
@@ -775,26 +788,31 @@ header {
 
             .item {
                 position: relative;
-                height: 14.188vw;
+                height: 265 * $desk + vw;
+
+                @media #{$mobile} {
+                    height: 550 * $desk + vw;
+                }
 
                 img {
-                    width: 28.125vw;
-                    height: 12.188vw;
+                    width: 540 * $desk + vw;
+                    height: 234 * $desk + vw;
+                    object-fit: contain;
 
                     @media #{$mobile} {
                         margin: 0 auto;
+                        width: 1080 * $desk + vw;
+                        height: 468 * $desk + vw;
                     }
                 }
-
-
 
                 .box_boder_top {
                     content: '';
                     top: 40%;
-                    width: calc(100% - 1.042vw);
-                    height: 0.052vw;
+                    width: calc(100% - $red_line_one_20);
+                    height: 1 * $desk + vw;
                     background: $red_color;
-                    left: 2.083vw;
+                    left: 40 * $desk + vw;
                     z-index: -1;
                     transition: 0.3s ease-in all;
                     transform: scale(0);
@@ -808,15 +826,19 @@ header {
                 .box_boder_right {
                     content: '';
                     top: 40%;
-                    width: 0.052vw;
-                    height: 8vw;
+                    width:  1 * $desk + vw;
+                    height: $red_line_one_70;
                     background: $red_color;
-                    right: -1.04vw;
+                    right: -$red_line_one_20;
                     z-index: -1;
                     transition: 0.3s ease-in all;
                     transition-delay: 0.3s;
                     transform: scale(0);
                     transform-origin: top;
+
+                    @media #{$mobile}{
+                        height: $red_line_one_mobile_70;
+                    }
                 }
 
                 &:hover .box_boder_right {
@@ -825,16 +847,20 @@ header {
 
                 .box_boder_bottom {
                     content: '';
-                    top: calc(100% - 0.5vw);
-                    width: calc(100% - 1.042vw);
-                    height: 0.052vw;
+                    top: calc(40% + $red_line_one_70);
+                    width: calc(100% - $red_line_one_20);
+                    height: 1 * $desk + vw;
                     background: $red_color;
-                    left: 2.083vw;
+                    left: 40 * $desk + vw;
                     z-index: -1;
                     transition: 0.3s ease-in all;
                     transition-delay: 0.6s;
                     transform: scale(0);
                     transform-origin: right;
+
+                    @media #{$mobile}{
+                        top: calc(40% + $red_line_one_mobile_70);
+                    }
                 }
 
                 &:hover .box_boder_bottom {
@@ -844,15 +870,19 @@ header {
                 .box_boder_left {
                     content: '';
                     top: 40%;
-                    width: 0.052vw;
-                    height: 8vw;
+                    width: 1 * $desk + vw;
+                    height: $red_line_one_70;
                     background: $red_color;
-                    left: 2.08vw;
+                    left: 40 * $desk + vw;
                     z-index: -1;
                     transition: 0.3s ease-in all;
                     transition-delay: 0.9s;
                     transform: scale(0);
                     transform-origin: bottom;
+
+                    @media #{$mobile}{
+                        height: $red_line_one_mobile_70;
+                    }
                 }
 
                 &:hover .box_boder_left {
