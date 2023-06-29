@@ -423,7 +423,7 @@ header .main_navbar .right_navbar nav ul li:hover a {
     border-right: none;
   }
   .homepage_stat_area .home_stat_flex .home_stat_box:not(:last-child) {
-    margin-bottom: 3.1746031746vw;
+    margin-bottom: 4.2989417989vw;
   }
 }
 .homepage_stat_area .home_stat_flex .home_stat_box .home_stat_col .stat_icon {
@@ -449,7 +449,7 @@ header .main_navbar .right_navbar nav ul li:hover a {
 }
 @media (max-width: 600px) {
   .homepage_stat_area .home_stat_flex .home_stat_box .home_stat_col .stat_txt h3 {
-    margin-bottom: 1.3227513228vw;
+    margin-bottom: 1.6534391534vw;
   }
 }
 .homepage_stat_area .home_stat_flex .home_stat_box .home_stat_col .stat_txt p {
@@ -459,7 +459,7 @@ header .main_navbar .right_navbar nav ul li:hover a {
 }
 @media (max-width: 600px) {
   .homepage_stat_area .home_stat_flex .home_stat_box .home_stat_col .stat_txt p {
-    line-height: 2.6455026455vw;
+    line-height: 3.3068783069vw;
   }
 }
 

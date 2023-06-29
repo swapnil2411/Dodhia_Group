@@ -481,7 +481,7 @@ header {
                 }
 
                 &:not(:last-child) {
-                    margin-bottom: 48 * $desk + vw;
+                    margin-bottom: 65 * $desk + vw;
                 }
             }
 
@@ -508,7 +508,7 @@ header {
                         margin-bottom: 10 * $desk + vw;
 
                         @media #{$mobile} {
-                            margin-bottom: 20 * $desk + vw;
+                            margin-bottom: 25 * $desk + vw;
                         }
 
                     }
@@ -519,7 +519,7 @@ header {
                         font-weight: 300;
 
                         @media #{$mobile} {
-                            line-height: 40 * $desk + vw;
+                            line-height: 50 * $desk + vw;
                         }
                     }
                 }
