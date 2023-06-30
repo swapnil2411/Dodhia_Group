@@ -13,6 +13,7 @@ $(document).ready(function(){
 
     $('.hamburger').on('click', function(){
         $('nav').toggleClass('show_nav');
+        $('nav ul').toggleClass('show_nav_menu');
         $('li').toggleClass('show_menu_list')
     })
     
