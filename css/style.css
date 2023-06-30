@@ -239,7 +239,7 @@ header .main_navbar {
 }
 @media (max-width: 768px) {
   header .main_navbar {
-    height: 5.4894179894vw;
+    height: 7.9365079365vw;
   }
 }
 header .main_navbar .left_navbar {
@@ -254,13 +254,18 @@ header .main_navbar .left_navbar .logo_area img {
   height: 6.8121693122vw;
 }
 @media (max-width: 768px) {
+  header .main_navbar .left_navbar .logo_area img {
+    width: 13.5582010582vw;
+    height: 9.9206349206vw;
+  }
+}
+@media (max-width: 768px) {
   header .main_navbar .right_navbar nav {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 5.4894179894vw;
+    top: 7.9365079365vw;
     min-width: 95.2380952381vw;
-    box-shadow: 0.0661375661vw 0.0661375661vw 0.1984126984vw #e6e6e6;
     height: 0;
   }
   header .main_navbar .right_navbar nav.show_nav {
@@ -277,10 +282,12 @@ header .main_navbar .right_navbar nav ul {
     padding: 1.9841269841vw 0;
   }
 }
-header .main_navbar .right_navbar nav ul li {
-  background: #fff;
-  opacity: 0;
-  transition: 0.01s ease-in-out all;
+@media (max-width: 768px) {
+  header .main_navbar .right_navbar nav ul li {
+    background: #fff;
+    opacity: 0;
+    transition: 0.01s ease-in-out all;
+  }
 }
 header .main_navbar .right_navbar nav ul li:nth-child(2) {
   transition-delay: 0.05s;
