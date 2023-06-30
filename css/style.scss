@@ -14,6 +14,7 @@ $red_line_one_20: 20 * $desk + vw;
 $red_line_one_70: 70 * $desk + vw;
 $red_line_one_140: 140 * $desk + vw;
 $red_line_one_mobile_70: 300 * $desk + vw;
+$left_absolute_30: 30 * $desk + vw;
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -160,6 +161,7 @@ table {
 
 .font-14 {
     font-size: 14 * $desk + vw;
+
     @media #{$mobile} {
         font-size: 40 * $desk + vw;
     }
@@ -167,6 +169,7 @@ table {
 
 .font-18 {
     font-size: 18 * $desk + vw;
+
     @media #{$mobile} {
         font-size: 42 * $desk + vw;
     }
@@ -174,6 +177,7 @@ table {
 
 .font-32 {
     font-size: 32 * $desk + vw;
+
     @media #{$mobile} {
         font-size: 65 * $desk + vw;
     }
@@ -187,7 +191,7 @@ table {
     padding-top: 95 * $desk + vw;
     padding-bottom: 95 * $desk + vw;
 
-    @media #{$mobile}{
+    @media #{$mobile} {
         padding-top: 160 * $desk + vw;
         padding-bottom: 160 * $desk + vw;
     }
@@ -213,7 +217,7 @@ table {
         line-height: 55 * $desk + vw;
         text-align: center;
 
-        @media #{$mobile}{
+        @media #{$mobile} {
             font-size: 70 * $desk + vw;
             line-height: 80 * $desk + vw;
         }
@@ -335,7 +339,7 @@ header {
             max-width: 45%;
             position: relative;
 
-            @media #{$mobile}{
+            @media #{$mobile} {
                 flex: 0 0 100%;
                 max-width: 100%;
             }
@@ -351,13 +355,13 @@ header {
                 line-height: 100 * $desk + vw;
                 opacity: 0.1;
 
-                @media #{$mobile}{
+                @media #{$mobile} {
                     font-size: 180 * $desk + vw;
                     line-height: 180 * $desk + vw;
                     text-shadow: -2 * $desk + vw 2 * $desk + vw 0 #000,
-                    2 * $desk + vw 2 * $desk + vw 0 #000,
-                    2 * $desk + vw -2 * $desk + vw 0 #000,
-                    -2 * $desk + vw -2 * $desk + vw 0 #000;
+                        2 * $desk + vw 2 * $desk + vw 0 #000,
+                        2 * $desk + vw -2 * $desk + vw 0 #000,
+                        -2 * $desk + vw -2 * $desk + vw 0 #000;
                 }
             }
 
@@ -366,7 +370,7 @@ header {
                 top: 65 * $desk + vw;
                 left: 0;
 
-                @media #{$mobile}{
+                @media #{$mobile} {
                     top: 100 * $desk + vw;
                 }
 
@@ -375,7 +379,7 @@ header {
                     line-height: 64 * $desk + vw;
                     font-weight: 700;
 
-                    @media #{$mobile}{
+                    @media #{$mobile} {
                         font-size: 110 * $desk + vw;
                         line-height: 110 * $desk + vw;
                     }
@@ -387,7 +391,7 @@ header {
             flex: 0 0 55%;
             max-width: 55%;
 
-            @media #{$mobile}{
+            @media #{$mobile} {
                 flex: 0 0 100%;
                 max-width: 100%;
                 margin-top: 100 * $desk + vw;
@@ -404,7 +408,7 @@ header {
                     line-height: 34 * $desk + vw;
                     font-weight: 500;
 
-                    @media #{$mobile}{
+                    @media #{$mobile} {
                         margin: 24 * $desk + vw 0 44 * $desk + vw;
                         font-size: 46 * $desk + vw;
                         line-height: 56 * $desk + vw;
@@ -416,7 +420,7 @@ header {
                     line-height: 28 * $desk + vw;
                     margin-bottom: 22 * $desk + vw;
 
-                    @media #{$mobile}{
+                    @media #{$mobile} {
                         line-height: 52 * $desk + vw;
                         margin-bottom: 44 * $desk + vw;
                     }
@@ -430,7 +434,7 @@ header {
                         line-height: 21 * $desk + vw;
                         font-weight: 700;
 
-                        @media #{$mobile}{
+                        @media #{$mobile} {
                             line-height: 40 * $desk + vw;
                         }
                     }
@@ -440,8 +444,8 @@ header {
                         font-size: 30 * $desk + vw;
                         margin-top: 2 * $desk + vw;
 
-                        
-                        @media #{$mobile}{
+
+                        @media #{$mobile} {
                             font-size: 60 * $desk + vw;
                         }
                     }
@@ -458,7 +462,7 @@ header {
     background-size: cover;
     padding: 35 * $desk + vw 0;
 
-    @media #{$mobile}{
+    @media #{$mobile} {
         padding: 70 * $desk + vw 00;
     }
 
@@ -547,18 +551,18 @@ header {
             position: absolute;
             left: -100 * $desk + vw;
             top: -30 * $desk + vw;
-            height:121 * $desk + vw;
+            height: 121 * $desk + vw;
             width: 121 * $desk + vw;
 
             @media #{$mobile} {
                 left: -130 * $desk + vw;
-                height:151 * $desk + vw;
+                height: 151 * $desk + vw;
                 width: 151 * $desk + vw;
             }
         }
 
         .title {
-            margin: 15 * $desk + vw  auto 0;
+            margin: 15 * $desk + vw auto 0;
             width: fit-content;
             position: relative;
         }
@@ -588,7 +592,7 @@ header {
                 flex: 0 0 100%;
                 max-width: 100%;
 
-                &:not(:last-child){
+                &:not(:last-child) {
                     margin-bottom: 60 * $desk + vw;
                 }
             }
@@ -637,8 +641,8 @@ header {
                 padding: 56 * $desk + vw 45 * $desk + vw 65 * $desk + vw;
                 transition: 0.5s ease-in-out all;
 
-                @media #{$mobile}{
-                    padding: 96 * $desk + vw 85 * $desk + vw 105 * $desk + vw; 
+                @media #{$mobile} {
+                    padding: 96 * $desk + vw 85 * $desk + vw 105 * $desk + vw;
                     top: 70%;
                 }
 
@@ -649,7 +653,7 @@ header {
                         color: #fff;
                         margin-bottom: 20 * $desk + vw;
 
-                        @media #{$mobile}{
+                        @media #{$mobile} {
                             line-height: 45 * $desk + vw;
                             margin-bottom: 30 * $desk + vw;
                         }
@@ -660,7 +664,7 @@ header {
                         font-weight: 400;
                         line-height: 24 * $desk + vw;
 
-                        @media #{$mobile}{
+                        @media #{$mobile} {
                             line-height: 62 * $desk + vw;
                         }
                     }
@@ -672,7 +676,7 @@ header {
                         font-weight: 400;
                         line-height: 24 * $desk + vw;
 
-                        @media #{$mobile}{
+                        @media #{$mobile} {
                             line-height: 62 * $desk + vw;
                         }
                     }
@@ -689,7 +693,7 @@ header {
                         -webkit-box-align: center;
                         align-items: center;
 
-                        @media #{$mobile}{
+                        @media #{$mobile} {
                             margin-top: 1.47vw;
                         }
 
@@ -697,7 +701,7 @@ header {
                             font-size: 1.563vw;
                             margin-top: 0.104vw;
 
-                            @media #{$mobile}{
+                            @media #{$mobile} {
                                 font-size: 3.8vw;
                             }
                         }
@@ -748,7 +752,7 @@ header {
                 font-weight: 700;
             }
 
-            @media #{$mobile}{
+            @media #{$mobile} {
                 font-size: 48 * $desk + vw;
                 line-height: 70 * $desk + vw;
             }
@@ -773,14 +777,14 @@ header {
             .owl-dot {
                 span {
                     height: 15 * $desk + vw;
-                    width:  15 * $desk + vw;
+                    width: 15 * $desk + vw;
                     background: $light_grey;
                     margin: 0 10 * $desk + vw;
                     border-radius: 15 * $desk + vw;
 
-                    @media #{$mobile}{
+                    @media #{$mobile} {
                         height: 30 * $desk + vw;
-                        width:  30 * $desk + vw;
+                        width: 30 * $desk + vw;
                         border-radius: 30 * $desk + vw;
                     }
                 }
@@ -829,7 +833,7 @@ header {
                     transform: scale(0);
                     transform-origin: left;
 
-                    @media #{$mobile}{
+                    @media #{$mobile} {
                         height: 2 * $desk + vw;
                     }
                 }
@@ -841,7 +845,7 @@ header {
                 .box_boder_right {
                     content: '';
                     top: 40%;
-                    width:  1 * $desk + vw;
+                    width: 1 * $desk + vw;
                     height: $red_line_one_140;
                     background: $red_color;
                     right: -$red_line_one_20;
@@ -851,7 +855,7 @@ header {
                     transform: scale(0);
                     transform-origin: top;
 
-                    @media #{$mobile}{
+                    @media #{$mobile} {
                         height: $red_line_one_mobile_70;
                         width: 2 * $desk + vw;
                     }
@@ -874,7 +878,7 @@ header {
                     transform: scale(0);
                     transform-origin: right;
 
-                    @media #{$mobile}{
+                    @media #{$mobile} {
                         top: calc(40% + $red_line_one_mobile_70);
                         height: 2 * $desk + vw;
                     }
@@ -897,7 +901,7 @@ header {
                     transform: scale(0);
                     transform-origin: bottom;
 
-                    @media #{$mobile}{
+                    @media #{$mobile} {
                         height: $red_line_one_mobile_70;
                         width: 2 * $desk + vw;
                     }
@@ -914,49 +918,50 @@ header {
 }
 
 /* Certification Css */
-.certification_area{
-    .title{
+.certification_area {
+    .title {
         margin-bottom: 54 * $desk + vw;
     }
 
-    .certification_carousel{
-        .owl-dots{
+    .certification_carousel {
+        .owl-dots {
             display: block !important;
             margin-top: 25 * $desk + vw !important;
 
-            .owl-dot{
-                span{
+            .owl-dot {
+                span {
                     height: 15 * $desk + vw;
-                    width:  15 * $desk + vw;
+                    width: 15 * $desk + vw;
                     background: $light_grey;
                     margin: 0 10 * $desk + vw;
                     border-radius: 15 * $desk + vw;
 
-                    @media #{$mobile}{
+                    @media #{$mobile} {
                         height: 30 * $desk + vw;
-                        width:  30 * $desk + vw;
+                        width: 30 * $desk + vw;
                         border-radius: 30 * $desk + vw;
                     }
                 }
-                &.active{
-                    span{
+
+                &.active {
+                    span {
                         background: $white;
                         border: 1 * $desk + vw solid $red_color;
                     }
                 }
             }
-            
+
         }
 
-        .owl-item{
-            .item{
+        .owl-item {
+            .item {
                 box-shadow: 1 * $desk + vw 1 * $desk + vw 3 * $desk + vw $light_grey;
                 margin: 3 * $desk + vw;
 
-                .certification_box{
+                .certification_box {
                     padding: 23 * $desk + vw 0;
 
-                    .certification_img{
+                    .certification_img {
                         height: 120 * $desk + vw;
                         display: -webkit-box;
                         display: -moz-box;
@@ -975,16 +980,17 @@ header {
                             height: 235 * $desk + vw;
                         }
 
-                        img{
+                        img {
                             max-width: 107 * $desk + vw;
+
                             @media #{$mobile} {
                                 max-width: 220 * $desk + vw;
                             }
                         }
                     }
 
-                    .certification_txt{
-                        p{
+                    .certification_txt {
+                        p {
                             font-weight: 500;
                             line-height: 20 * $desk + vw;
                             text-align: center;
@@ -1001,29 +1007,57 @@ header {
 }
 
 /* Core Team Css */
-.core_team_area{
-    .team_leader_carousel{
+.core_team_area {
+    .team_leader_carousel {
         margin-top: 90 * $desk + vw;
+        .owl-dots {
+            display: block !important;
+            margin-top: 25 * $desk + vw !important;
 
-        .owl-stage-outer{
+            .owl-dot {
+                span {
+                    height: 15 * $desk + vw;
+                    width: 15 * $desk + vw;
+                    background: $light_grey;
+                    margin: 0 10 * $desk + vw;
+                    border-radius: 15 * $desk + vw;
+
+                    @media #{$mobile} {
+                        height: 30 * $desk + vw;
+                        width: 30 * $desk + vw;
+                        border-radius: 30 * $desk + vw;
+                    }
+                }
+
+                &.active {
+                    span {
+                        background: $white;
+                        border: 1 * $desk + vw solid $red_color;
+                    }
+                }
+            }
+
+        }
+
+        .owl-stage-outer {
             padding: 0 30 * $desk + vw;
 
-            .leader_box{
-                width: 260 * $desk + vw;
+            .leader_box {
+                width: 270 * $desk + vw;
                 position: relative;
                 padding-bottom: 70 * $desk + vw;
                 z-index: 2;
 
-                @media #{$mobile}{
+                @media #{$mobile} {
                     margin: 0 auto;
-                    width: 300 * $desk + vw;
+                    width: 430 * $desk + vw;
                 }
 
-                @media #{$small_mobile}{
+                @media #{$small_mobile} {
                     max-width: 100%;
                 }
 
-                .box_boder_top{
+                .box_boder_top {
                     content: '';
                     position: absolute;
                     width: 50%;
@@ -1037,15 +1071,15 @@ header {
                     z-index: 0;
                 }
 
-                &:hover .box_boder_top{
+                &:hover .box_boder_top {
                     transform: scale(1);
                 }
 
-                .box_boder_left{
+                .box_boder_left {
                     content: '';
                     position: absolute;
                     width: 1 * $desk + vw;
-                    height: calc(100% - $red_line_one_70);
+                    height: 400 * $desk + vw;
                     top: 51 * $desk + vw;
                     left: -30 * $desk + vw;
                     background: $red_color;
@@ -1054,18 +1088,22 @@ header {
                     transform: scale(0);
                     transform-origin: top;
                     z-index: 0;
+
+                    @media #{$small_mobile} {
+                        height: 580 * $desk + vw;
+                    }
                 }
 
-                &:hover .box_boder_left{
+                &:hover .box_boder_left {
                     transform: scale(1);
                 }
 
-                .box_boder_bottom{
+                .box_boder_bottom {
                     content: '';
                     position: absolute;
                     width: 50%;
                     height: 1 * $desk + vw;
-                    top: 96%;
+                    top: 450 * $desk + vw;
                     left: -30 * $desk + vw;
                     background: $red_color;
                     transition: 0.3s ease-in all;
@@ -1073,38 +1111,46 @@ header {
                     transform: scale(0);
                     transform-origin: left;
                     z-index: 0;
+
+                    @media #{$small_mobile} {
+                        top: 630 * $desk + vw;
+                    }
                 }
 
-                &:hover .box_boder_bottom{
+                &:hover .box_boder_bottom {
                     transform: scale(1);
                 }
 
-                .box_boder_right{
+                .box_boder_right {
                     content: '';
                     position: absolute;
                     width: 1 * $desk + vw;
-                    height: calc(100% - $red_line_one_70);
+                    height: 400 * $desk + vw;
                     top: 51 * $desk + vw;
-                    left: 39%;
+                    left: calc(50% - $left_absolute_30);
                     background: $red_color;
                     transition: 0.3s ease-in all;
                     transition-delay: 0.9s;
                     transform: scale(0);
                     transform-origin: bottom;
                     z-index: 0;
+
+                    @media #{$small_mobile} {
+                        height: 580 * $desk + vw;
+                    }
                 }
 
-                &:hover .box_boder_right{
+                &:hover .box_boder_right {
                     transform: scale(1);
                 }
 
-                .leader_txt{
+                .leader_txt {
                     background: $red_color;
                     padding: 23 * $desk + vw 15 * $desk + vw;
                     position: relative;
                     z-index: 2;
 
-                    h2{
+                    h2 {
                         font-size: 24 * $desk + vw;
                         line-height: 29 * $desk + vw;
                         font-weight: 500;
@@ -1112,18 +1158,18 @@ header {
                         text-align: center;
                     }
 
-                    p{
+                    p {
                         font-weight: 400;
                         line-height: 18 * $desk + vw;
                         color: $white;
                         text-align: center;
 
-                        @media #{$mobile}{
+                        @media #{$mobile} {
                             font-size: 14 * $desk + vw;
                         }
                     }
 
-                    img{
+                    img {
                         position: absolute;
                         max-width: 100%;
                         width: unset;
@@ -1134,13 +1180,13 @@ header {
                     }
                 }
 
-                .leader_img{
+                .leader_img {
                     position: relative;
                     z-index: 2;
                 }
             }
         }
 
-        
+
     }
 }
