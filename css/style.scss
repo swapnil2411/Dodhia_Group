@@ -157,6 +157,10 @@ table {
 .content_container {
     max-width: 1358 * $desk + vw;
     margin: 0 auto;
+
+    @media #{$mobile}{
+        max-width: 1440 * $desk + vw;
+    }
 }
 
 .font-14 {

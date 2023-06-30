@@ -139,6 +139,11 @@ table {
   max-width: 89.8148148148vw;
   margin: 0 auto;
 }
+@media (max-width: 600px) {
+  .content_container {
+    max-width: 95.2380952381vw;
+  }
+}
 
 .font-14 {
   font-size: 0.9259259259vw;
