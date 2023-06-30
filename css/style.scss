@@ -1228,6 +1228,11 @@ header {
                 padding-bottom: 70 * $desk + vw;
                 z-index: 2;
 
+                @media #{$tablet} {
+                    margin: 0 auto;
+                    width: 400 * $desk + vw;
+                }
+
                 @media #{$mobile} {
                     margin: 0 auto;
                     width: 430 * $desk + vw;
@@ -1269,8 +1274,8 @@ header {
                     transform-origin: top;
                     z-index: 0;
 
-                    @media #{$small_mobile} {
-                        height: 580 * $desk + vw;
+                    @media #{$tablet} {
+                        height: 620 * $desk + vw;
                     }
                 }
 
@@ -1292,8 +1297,8 @@ header {
                     transform-origin: left;
                     z-index: 0;
 
-                    @media #{$small_mobile} {
-                        top: 630 * $desk + vw;
+                    @media #{$tablet} {
+                        top: 670 * $desk + vw;
                     }
                 }
 
@@ -1315,8 +1320,8 @@ header {
                     transform-origin: bottom;
                     z-index: 0;
 
-                    @media #{$small_mobile} {
-                        height: 580 * $desk + vw;
+                    @media #{$tablet} {
+                        height: 620 * $desk + vw;
                     }
                 }
 
@@ -1330,12 +1335,21 @@ header {
                     position: relative;
                     z-index: 2;
 
+                    @media #{$tablet} {
+                        padding: 23 * $desk + vw 5 * $desk + vw;
+                    }
+
                     h2 {
                         font-size: 24 * $desk + vw;
                         line-height: 29 * $desk + vw;
                         font-weight: 500;
                         color: $white;
                         text-align: center;
+
+                        @media #{$tablet} {
+                            font-size: 36 * $desk + vw;
+                            line-height: 50* $desk + vw;
+                        }
                     }
 
                     p {
@@ -1345,7 +1359,8 @@ header {
                         text-align: center;
 
                         @media #{$tablet} {
-                            font-size: 14 * $desk + vw;
+                            font-size: 24* $desk + vw;
+                            line-height: 32 * $desk + vw;
                         }
                     }
 

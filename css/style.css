@@ -1041,6 +1041,12 @@ header .main_navbar .hamburger svg {
   padding-bottom: 4.6296296296vw;
   z-index: 2;
 }
+@media (max-width: 768px) {
+  .core_team_area .team_leader_carousel .owl-stage-outer .leader_box {
+    margin: 0 auto;
+    width: 26.455026455vw;
+  }
+}
 @media (max-width: 600px) {
   .core_team_area .team_leader_carousel .owl-stage-outer .leader_box {
     margin: 0 auto;
@@ -1082,9 +1088,9 @@ header .main_navbar .hamburger svg {
   transform-origin: top;
   z-index: 0;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .core_team_area .team_leader_carousel .owl-stage-outer .leader_box .box_boder_left {
-    height: 38.3597883598vw;
+    height: 41.0052910053vw;
   }
 }
 .core_team_area .team_leader_carousel .owl-stage-outer .leader_box:hover .box_boder_left {
@@ -1104,9 +1110,9 @@ header .main_navbar .hamburger svg {
   transform-origin: left;
   z-index: 0;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .core_team_area .team_leader_carousel .owl-stage-outer .leader_box .box_boder_bottom {
-    top: 41.6666666667vw;
+    top: 44.3121693122vw;
   }
 }
 .core_team_area .team_leader_carousel .owl-stage-outer .leader_box:hover .box_boder_bottom {
@@ -1126,9 +1132,9 @@ header .main_navbar .hamburger svg {
   transform-origin: bottom;
   z-index: 0;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .core_team_area .team_leader_carousel .owl-stage-outer .leader_box .box_boder_right {
-    height: 38.3597883598vw;
+    height: 41.0052910053vw;
   }
 }
 .core_team_area .team_leader_carousel .owl-stage-outer .leader_box:hover .box_boder_right {
@@ -1140,12 +1146,23 @@ header .main_navbar .hamburger svg {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 768px) {
+  .core_team_area .team_leader_carousel .owl-stage-outer .leader_box .leader_txt {
+    padding: 1.5211640212vw 0.3306878307vw;
+  }
+}
 .core_team_area .team_leader_carousel .owl-stage-outer .leader_box .leader_txt h2 {
   font-size: 1.5873015873vw;
   line-height: 1.917989418vw;
   font-weight: 500;
   color: #fff;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .core_team_area .team_leader_carousel .owl-stage-outer .leader_box .leader_txt h2 {
+    font-size: 2.380952381vw;
+    line-height: 3.3068783069vw;
+  }
 }
 .core_team_area .team_leader_carousel .owl-stage-outer .leader_box .leader_txt p {
   font-weight: 400;
@@ -1155,7 +1172,8 @@ header .main_navbar .hamburger svg {
 }
 @media (max-width: 768px) {
   .core_team_area .team_leader_carousel .owl-stage-outer .leader_box .leader_txt p {
-    font-size: 0.9259259259vw;
+    font-size: 1.5873015873vw;
+    line-height: 2.1164021164vw;
   }
 }
 .core_team_area .team_leader_carousel .owl-stage-outer .leader_box .leader_txt img {
