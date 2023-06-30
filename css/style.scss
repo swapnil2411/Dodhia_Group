@@ -7,8 +7,11 @@ $red_color: #CB2229;
 $white: #fff;
 $light_grey: #DCDCDC;
 
+$tablet: "(max-width: 768px)";
 $mobile: "(max-width: 600px)";
 $small_mobile: "(max-width: 480px)";
+
+$tablet_header_height: 83 * $desk + vw;
 
 $red_line_one_20: 20 * $desk + vw;
 $red_line_one_70: 70 * $desk + vw;
@@ -166,7 +169,7 @@ table {
 .font-14 {
     font-size: 14 * $desk + vw;
 
-    @media #{$mobile} {
+    @media #{$tablet} {
         font-size: 40 * $desk + vw;
     }
 }
@@ -239,9 +242,13 @@ table {
 
 /* Header Css */
 header {
-    position: relative;
+    // position: relative;
+    position: fixed;
+    width: 100%;
+    background: #fff;
     z-index: 10;
-    background: transparent;
+    // background: transparent;
+
 
     &.sticky {
         position: fixed;
@@ -263,6 +270,11 @@ header {
         align-items: center;
         position: relative;
 
+        
+    @media #{$tablet}{
+        height: $tablet_header_height;
+    }
+
         .left_navbar {
             position: absolute;
             left: 0;
@@ -276,35 +288,181 @@ header {
             }
         }
 
-        .right_navbar nav ul {
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-align-items: center;
-            -webkit-box-align: center;
-            align-items: center;
+        .right_navbar {
+            
+            nav {
 
-            li {
-                &:not(:last-child) {
-                    margin-right: 50 * $desk + vw;
-                }
+                @media #{$tablet}{
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    // background: $white;
+                    top: $tablet_header_height;
+                    // height: calc(100vh - $tablet_header_height);
+                    min-width: 1440 * $desk + vw;
+                    box-shadow: 1 * $desk + vw 1 * $desk + vw 3 * $desk + vw #e6e6e6;
+                    height: 0;
+                    // transition: .65s ease-in-out all;
 
-                a {
-                    text-decoration: none;
-                    font-weight: 700;
-                    line-height: 20 * $desk + vw;
-                    color: $black_color;
-                    display: block;
-                    padding: 30 * $desk + vw 0;
-                    text-transform: uppercase;
-                }
-
-                &:hover {
-                    a {
-                        color: $red_color;
+                    &.show_nav{
+                        height: 630 * $desk + vw;
                     }
+                }
+
+                ul {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-align-items: center;
+                    -webkit-box-align: center;
+                    align-items: center;
+
+                    @media #{$tablet}{
+                        display: block;
+                        padding: 30 * $desk + vw 0;
+                    }
+
+                    li {
+                        background: $white;
+                        opacity: 0;
+                        transition: 0.01s ease-in-out all;
+
+                        &:nth-child(2){
+                            transition-delay: .05s;
+                        }
+                        &:nth-child(3){
+                            transition-delay: .1s;
+                        }
+                        &:nth-child(4){
+                            transition-delay: .15s;
+                        }
+                        &:nth-child(5){
+                            transition-delay: .20s;
+                        }
+                        &:nth-child(6){
+                            transition-delay: .25s;
+                        }
+
+                        &.show_menu_list{
+                            opacity: 1;
+                        }
+
+                        &:not(:last-child) {
+                            margin-right: 50 * $desk + vw;
+
+                            @media #{$tablet}{
+                                margin-right: 0;
+                            }
+                        }
+        
+                        a {
+                            text-decoration: none;
+                            font-weight: 700;
+                            line-height: 20 * $desk + vw;
+                            color: $black_color;
+                            display: block;
+                            padding: 30 * $desk + vw 0;
+                            text-transform: uppercase;
+
+                            @media #{$tablet}{
+                                padding: 40 * $desk + vw 30 * $desk + vw; 
+                            }
+
+                            @media #{$mobile}{
+                                padding: 40 * $desk + vw 30 * $desk + vw; 
+                            }
+                        }
+        
+                        &:hover {
+                            a {
+                                color: $red_color;
+                            }
+                        }
+        
+                        &.dropdown{
+                            
+                            .btn {
+                                color: $black_color;
+                                background: transparent;
+                                border: none;
+                                outline: none;
+                                font-weight: 700;
+                                line-height: 20 * $desk + vw;
+                                padding: 0;
+
+                                @media #{$tablet}{
+                                    padding: 30 * $desk + vw;
+                                    text-align: left;
+                                }
+
+                                @media #{$mobile}{
+                                    padding: 40 * $desk + vw 30 * $desk + vw;
+                                }
+        
+                                &:focus{
+                                    outline: none;
+                                    box-shadow: none;
+                                }
+                                &:hover{
+                                    color: $red_color;
+                                }
+                            }
+        
+                            .dropdown-menu{
+                                min-width: 169 * $desk + vw;
+                                padding: 0;
+                                margin: 5 * $desk + vw 0;
+                                border-radius: 4 * $desk + vw;
+                                top: 24 * $desk + vw !important;
+
+                                @media #{$tablet}{
+                                    width: 98%;
+                                    min-width: 180 * $desk + vw;
+                                    margin: 0;
+                                    top: 95 * $desk + vw !important;
+                                    left: 50% !important;
+                                    transform: translateX(-50%) !important;
+                                }
+        
+                                .dropdown-item{
+                                    padding: 10 * $desk + vw 15 * $desk + vw;
+                                    color: $black_color;
+                                    font-weight: 400;
+                                    text-transform: uppercase;
+                                    &:hover{
+                                        background: $red_color;
+                                        color: $white;
+                                    }
+
+                                    @media #{$tablet}{
+                                        padding: 30 * $desk + vw;
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+           
+        }
+
+        .hamburger{
+            display: none;
+
+            @media #{$tablet} {
+                display: block;
+            }
+
+            svg{
+                width: 42 * $desk + vw;
+                height: 42 * $desk + vw;
+                color: $red_color;
+
+                @media #{$tablet} {
+                    width: 82 * $desk + vw;
+                    height: 82 * $desk + vw;
                 }
             }
         }
@@ -1168,7 +1326,7 @@ header {
                         color: $white;
                         text-align: center;
 
-                        @media #{$mobile} {
+                        @media #{$tablet} {
                             font-size: 14 * $desk + vw;
                         }
                     }

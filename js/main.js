@@ -10,6 +10,11 @@ $(window).scroll(function(){
 });
 
 $(document).ready(function(){
+
+    $('.hamburger').on('click', function(){
+        $('nav').toggleClass('show_nav');
+        $('li').toggleClass('show_menu_list')
+    })
     
     $('.awards_carousel').owlCarousel({
         loop:true,
