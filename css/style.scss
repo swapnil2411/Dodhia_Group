@@ -912,6 +912,10 @@ header {
 .experience_video_area {
     margin-top: 2.344vw;
 
+    @media #{$tablet}{
+        margin-top: 4.688vw;
+    }
+
     video {
         display: block;
     }
@@ -921,6 +925,10 @@ header {
 .awards_area {
     .presentation_txt {
         margin: 52 * $desk + vw 0 79 * $desk + vw;
+
+        @media #{$tablet}{
+            margin: 72 * $desk + vw 0 99 * $desk + vw;
+        }
 
         p {
             text-align: center;

@@ -783,6 +783,11 @@ header .main_navbar .hamburger svg {
 .experience_video_area {
   margin-top: 2.344vw;
 }
+@media (max-width: 768px) {
+  .experience_video_area {
+    margin-top: 4.688vw;
+  }
+}
 .experience_video_area video {
   display: block;
 }
@@ -790,6 +795,11 @@ header .main_navbar .hamburger svg {
 /* Presentation Css */
 .awards_area .presentation_txt {
   margin: 3.4391534392vw 0 5.2248677249vw;
+}
+@media (max-width: 768px) {
+  .awards_area .presentation_txt {
+    margin: 4.7619047619vw 0 6.5476190476vw;
+  }
 }
 .awards_area .presentation_txt p {
   text-align: center;
