@@ -244,7 +244,7 @@ header .main_navbar {
 }
 @media (max-width: 768px) {
   header .main_navbar {
-    height: 7.9365079365vw;
+    height: 9.9206349206vw;
   }
 }
 header .main_navbar .left_navbar {
@@ -260,8 +260,8 @@ header .main_navbar .left_navbar .logo_area img {
 }
 @media (max-width: 768px) {
   header .main_navbar .left_navbar .logo_area img {
-    width: 13.5582010582vw;
-    height: 9.9206349206vw;
+    width: 15.5423280423vw;
+    height: 11.9047619048vw;
   }
 }
 @media (max-width: 768px) {
@@ -269,7 +269,7 @@ header .main_navbar .left_navbar .logo_area img {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 7.9365079365vw;
+    top: 9.9206349206vw;
     min-width: 95.2380952381vw;
     height: 0;
   }
@@ -1214,8 +1214,8 @@ footer .footer_logo img {
 }
 @media (max-width: 768px) {
   footer .footer_logo img {
-    width: 12.5661375661vw;
-    height: 7.9365079365vw;
+    width: 15.5423280423vw;
+    height: 9.2592592593vw;
   }
 }
 footer .main_footer_area {
@@ -1236,12 +1236,6 @@ footer .main_footer_area .footer_flex .footer_column:nth-child(1) {
     margin-bottom: 1.9841269841vw;
   }
 }
-@media (max-width: 600px) {
-  footer .main_footer_area .footer_flex .footer_column:nth-child(1) {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
 footer .main_footer_area .footer_flex .footer_column:nth-child(2) {
   flex: 0 0 15%;
   max-width: 15%;
@@ -1251,12 +1245,6 @@ footer .main_footer_area .footer_flex .footer_column:nth-child(2) {
     flex: 0 0 50%;
     max-width: 50%;
     margin-bottom: 1.9841269841vw;
-  }
-}
-@media (max-width: 600px) {
-  footer .main_footer_area .footer_flex .footer_column:nth-child(2) {
-    flex: 0 0 100%;
-    max-width: 100%;
   }
 }
 footer .main_footer_area .footer_flex .footer_column:nth-child(3) {
@@ -1270,12 +1258,6 @@ footer .main_footer_area .footer_flex .footer_column:nth-child(3) {
     margin-bottom: 1.9841269841vw;
   }
 }
-@media (max-width: 600px) {
-  footer .main_footer_area .footer_flex .footer_column:nth-child(3) {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
 footer .main_footer_area .footer_flex .footer_column:nth-child(4) {
   flex: 0 0 20%;
   max-width: 20%;
@@ -1285,12 +1267,6 @@ footer .main_footer_area .footer_flex .footer_column:nth-child(4) {
     flex: 0 0 50%;
     max-width: 50%;
     margin-bottom: 1.9841269841vw;
-  }
-}
-@media (max-width: 600px) {
-  footer .main_footer_area .footer_flex .footer_column:nth-child(4) {
-    flex: 0 0 100%;
-    max-width: 100%;
   }
 }
 footer .main_footer_area .footer_flex .footer_column:nth-child(5) {

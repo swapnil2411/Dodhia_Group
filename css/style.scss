@@ -11,7 +11,7 @@ $tablet: "(max-width: 768px)";
 $mobile: "(max-width: 600px)";
 $small_mobile: "(max-width: 480px)";
 
-$tablet_header_height: 120 * $desk + vw;
+$tablet_header_height: 150 * $desk + vw;
 
 $red_line_one_20: 20 * $desk + vw;
 $red_line_one_70: 70 * $desk + vw;
@@ -291,8 +291,8 @@ header {
                 height: 103 * $desk + vw;
 
                 @media #{$tablet}{
-                    width: 205 * $desk + vw;
-                    height: 150 * $desk + vw;
+                    width: 235 * $desk + vw;
+                    height: 180 * $desk + vw;
                 }
             }
         }
@@ -1407,8 +1407,8 @@ footer{
             height: 80 * $desk + vw;
 
             @media #{$tablet}{
-                width: 190 * $desk + vw;
-                height: 120 * $desk + vw;
+                width: 235 * $desk + vw;
+                height: 140 * $desk + vw;
             }
         }
     }
@@ -1435,10 +1435,6 @@ footer{
                         margin-bottom: 30 * $desk + vw;
                     }
 
-                    @media #{$mobile}{
-                        flex: 0 0 100%;
-                        max-width: 100%;
-                    }
                 }
                 &:nth-child(2){
                     flex: 0 0 15%;
@@ -1450,10 +1446,6 @@ footer{
                         margin-bottom: 30 * $desk + vw;
                     }
 
-                    @media #{$mobile}{
-                        flex: 0 0 100%;
-                        max-width: 100%;
-                    }
                 }
                 &:nth-child(3){
                     flex: 0 0 15%;
@@ -1464,10 +1456,6 @@ footer{
                         max-width: 50%;
                         margin-bottom: 30 * $desk + vw;
                     }
-                    @media #{$mobile}{
-                        flex: 0 0 100%;
-                        max-width: 100%;
-                    }
                 }
                 &:nth-child(4){
                     flex: 0 0 20%;
@@ -1477,10 +1465,6 @@ footer{
                         flex: 0 0 50%;
                         max-width: 50%;
                         margin-bottom: 30 * $desk + vw;
-                    }
-                    @media #{$mobile}{
-                        flex: 0 0 100%;
-                        max-width: 100%;
                     }
                 }
                 &:nth-child(5){
