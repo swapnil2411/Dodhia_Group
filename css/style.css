@@ -232,8 +232,8 @@ table {
 header {
   position: fixed;
   width: 100%;
+  background: #fff;
   z-index: 10;
-  background: transparent;
 }
 header.sticky {
   position: fixed;
