@@ -232,8 +232,8 @@ table {
 header {
   position: fixed;
   width: 100%;
-  background: #fff;
   z-index: 10;
+  background: transparent;
 }
 header.sticky {
   position: fixed;
@@ -1379,4 +1379,159 @@ footer .copyright_area {
 footer .copyright_area p {
   color: #fff;
   text-align: center;
+}
+
+/**************************** Textile Page Css *****************************/
+/* Textile Banner Animation */
+.thread_animation {
+  height: 143vh;
+  position: relative;
+}
+.thread_animation .bottle_img {
+  position: absolute;
+  opacity: 0;
+}
+.thread_animation .bottle_01 {
+  top: 18vw;
+  left: 0;
+  width: 27vw;
+  height: 17.353vw;
+}
+.thread_animation .bottle_02 {
+  left: 54vw;
+  transform: translateX(-50%);
+  top: 0;
+  width: 7.981vw;
+  height: 18.646vw;
+}
+.thread_animation .bottle_03 {
+  top: 35vw;
+  right: 0;
+  width: 27.653vw;
+  height: 6.469vw;
+}
+.thread_animation .bobbin {
+  position: absolute;
+  opacity: 0;
+}
+.thread_animation .bobbin_01 {
+  width: 13.202vw;
+  height: 16.057vw;
+  right: 37vw;
+  top: 23vw;
+  z-index: 1;
+}
+.thread_animation .bobbin_02 {
+  width: 14.666vw;
+  height: 14.105vw;
+  top: 32.646vw;
+  left: 46vw;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+.thread_animation .bobbin_03 {
+  width: 14.886vw;
+  height: 14.886vw;
+  top: 23.646vw;
+  left: 44.5vw;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.thread_animation .thread {
+  position: absolute;
+  opacity: 0;
+  z-index: 4;
+}
+.thread_animation .thread_01 {
+  top: 17.5vw;
+  left: 49.8vw;
+  transform: translateX(-50%);
+  width: 2.685vw;
+  height: 6.712vw;
+}
+.thread_animation .thread_02 {
+  top: 33.5vw;
+  left: 31vw;
+  transform: translateX(-50%);
+  width: 10.372vw;
+  height: 4.076vw;
+}
+.thread_animation .thread_03 {
+  top: 33.5vw;
+  right: 22vw;
+  transform: translateX(-50%);
+  width: 8.615vw;
+  height: 3.857vw;
+}
+.thread_animation .thread_vector {
+  position: absolute;
+  opacity: 0;
+}
+.thread_animation .thread_vector_01 {
+  width: 6.955vw;
+  height: 26.72vw;
+  top: 39vw;
+  left: 49vw;
+  transform: translateX(-50%);
+}
+.thread_animation .thread_vector_02 {
+  width: 6.955vw;
+  height: 29.283vw;
+  top: 36.5vw;
+  left: 52vw;
+  transform: translateX(-50%);
+}
+.thread_animation .thread_vector_03 {
+  width: 6.955vw;
+  height: 29.283vw;
+  top: 36.5vw;
+  left: 54vw;
+  transform: translateX(-50%);
+}
+.thread_animation .line_vector {
+  position: absolute;
+  opacity: 0;
+}
+.thread_animation .line_vector_01 {
+  width: 8.492vw;
+  height: 2.123vw;
+  top: 36.5vw;
+  left: 34vw;
+}
+.thread_animation .line_vector_02 {
+  width: 2vw;
+  height: 6.272vw;
+  top: 23vw;
+  left: 48vw;
+  transform: translateX(-50%);
+}
+.thread_animation .line_vector_03 {
+  width: 7.053vw;
+  height: 1.5vw;
+  right: 33vw;
+  top: 33.3vw;
+}
+.thread_animation .marquee {
+  position: absolute;
+  width: 100%;
+  font-size: 9.921vw;
+  font-weight: 700;
+  color: #d5d5d5;
+  opacity: 0.35;
+}
+.thread_animation .marquee_one {
+  top: 7.9365079365vw;
+}
+@media (max-width: 768px) {
+  .thread_animation .marquee_one {
+    top: 13.2275132275vw;
+  }
+}
+.thread_animation .marquee_two {
+  top: 29.7619047619vw;
+}
+@media (max-width: 768px) {
+  .thread_animation .marquee_two {
+    top: 46.2962962963vw;
+  }
 }/*# sourceMappingURL=style.css.map */
