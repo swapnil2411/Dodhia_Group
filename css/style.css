@@ -106,6 +106,10 @@ section {
   display: block;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1;
   font-family: "Outfit", sans-serif;
@@ -430,6 +434,7 @@ header .main_navbar .hamburger svg {
 /* Banner Css */
 .banner_area {
   position: relative;
+  padding-top: 5.291005291vw;
 }
 .banner_area .banner_wave {
   position: absolute;
@@ -561,6 +566,8 @@ header .main_navbar .hamburger svg {
   background: url("../img/home_stats_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   padding: 2.3148148148vw 0;
 }
 @media (max-width: 600px) {
@@ -633,7 +640,7 @@ header .main_navbar .hamburger svg {
 .our_business_area .sec_header .yarn_ball {
   position: absolute;
   left: -6.6137566138vw;
-  top: -1.9841269841vw;
+  top: -4.9603174603vw;
   height: 8.0026455026vw;
   width: 8.0026455026vw;
 }
@@ -1365,4 +1372,11 @@ footer .main_footer_area .footer_flex .footer_column .follow_area .follow_links 
 }
 footer .main_footer_area .footer_flex .footer_column .follow_area .follow_links li:not(:last-child) {
   margin-right: 1.3227513228vw;
+}
+footer .copyright_area {
+  padding: 1.9841269841vw 0 2.6455026455vw;
+}
+footer .copyright_area p {
+  color: #fff;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
