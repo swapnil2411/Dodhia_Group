@@ -443,7 +443,7 @@ header .main_navbar .hamburger svg {
 /* Banner Css */
 .banner_area {
   position: relative;
-  padding: 5.291005291vw;
+  padding: 5.291005291vw 0 0;
 }
 @media (max-width: 768px) {
   .banner_area {

@@ -503,7 +503,7 @@ header {
 
 .banner_area {
     position: relative;
-    padding: 80 * $desk + vw;
+    padding: 80 * $desk + vw 0 0;
     @media #{$tablet}{
         padding-top: $tablet_header_height;
     }
