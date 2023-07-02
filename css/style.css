@@ -232,8 +232,9 @@ table {
 header {
   position: fixed;
   width: 100%;
-  background: #fff;
   z-index: 10;
+  background: transparent;
+  transition: 0.5s ease-in-out all;
 }
 header.sticky {
   position: fixed;
@@ -301,6 +302,9 @@ header .main_navbar .right_navbar nav ul.show_nav_menu {
     opacity: 0;
     visibility: hidden;
     transition: 0.01s ease-in-out all;
+    border-top: 0.052vw solid #DCDCDC;
+    border-left: 0.052vw solid #DCDCDC;
+    border-right: 0.052vw solid #DCDCDC;
   }
 }
 header .main_navbar .right_navbar nav ul li:nth-child(2) {
@@ -317,6 +321,11 @@ header .main_navbar .right_navbar nav ul li:nth-child(5) {
 }
 header .main_navbar .right_navbar nav ul li:nth-child(6) {
   transition-delay: 0.25s;
+}
+@media (max-width: 600px) {
+  header .main_navbar .right_navbar nav ul li:nth-child(6) {
+    border-bottom: 0.052vw solid #DCDCDC;
+  }
 }
 header .main_navbar .right_navbar nav ul li.show_menu_list {
   opacity: 1;
@@ -388,10 +397,10 @@ header .main_navbar .right_navbar nav ul li.dropdown .dropdown-menu {
 }
 @media (max-width: 768px) {
   header .main_navbar .right_navbar nav ul li.dropdown .dropdown-menu {
-    width: 98%;
+    width: 100%;
     min-width: 11.9047619048vw;
     margin: 0;
-    top: 6.2830687831vw !important;
+    top: 6.4153439153vw !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
   }
@@ -434,7 +443,12 @@ header .main_navbar .hamburger svg {
 /* Banner Css */
 .banner_area {
   position: relative;
-  padding-top: 5.291005291vw;
+  padding: 5.291005291vw;
+}
+@media (max-width: 768px) {
+  .banner_area {
+    padding-top: 9.9206349206vw;
+  }
 }
 .banner_area .banner_wave {
   position: absolute;

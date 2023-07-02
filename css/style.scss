@@ -253,9 +253,10 @@ header {
     // position: relative;
     position: fixed;
     width: 100%;
-    background: #fff;
+    // background: #fff;
     z-index: 10;
-    // background: transparent;
+    background: transparent;
+    transition: 0.5s ease-in-out all;
 
 
     &.sticky {
@@ -343,11 +344,15 @@ header {
                     }
 
                     li {
+                        
                         @media #{$tablet}{
                             background: $white;
                             opacity: 0;
                             visibility: hidden;
                             transition: 0.01s ease-in-out all;
+                            border-top: 0.052vw solid $light_grey;
+                            border-left: 0.052vw solid $light_grey;
+                            border-right: 0.052vw solid $light_grey;
                         }
 
                         &:nth-child(2){
@@ -364,6 +369,9 @@ header {
                         }
                         &:nth-child(6){
                             transition-delay: .25s;
+                            @media #{$mobile}{
+                                border-bottom: 0.052vw solid $light_grey;
+                            }
                         }
 
                         &.show_menu_list{
@@ -440,10 +448,10 @@ header {
                                 top: 24 * $desk + vw !important;
 
                                 @media #{$tablet}{
-                                    width: 98%;
+                                    width: 100%;
                                     min-width: 180 * $desk + vw;
                                     margin: 0;
-                                    top: 95 * $desk + vw !important;
+                                    top: 97 * $desk + vw !important;
                                     left: 50% !important;
                                     transform: translateX(-50%) !important;
                                 }
@@ -495,7 +503,10 @@ header {
 
 .banner_area {
     position: relative;
-    padding-top: 80 * $desk + vw;
+    padding: 80 * $desk + vw;
+    @media #{$tablet}{
+        padding-top: $tablet_header_height;
+    }
     .banner_wave {
         position: absolute;
         bottom: -400 * $desk + vw;
