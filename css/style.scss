@@ -1631,7 +1631,7 @@ footer{
 .thread_animation{
     height: 1000 * $desk + vw;
     @media #{$mobile}{
-        height: 91vh;
+        height: 1370 * $desk + vw;
     }
     position: relative;
     .bottle_img{

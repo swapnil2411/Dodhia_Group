@@ -1389,7 +1389,7 @@ footer .copyright_area p {
 }
 @media (max-width: 600px) {
   .thread_animation {
-    height: 91vh;
+    height: 90.6084656085vw;
   }
 }
 .thread_animation .bottle_img {
