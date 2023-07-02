@@ -1384,8 +1384,13 @@ footer .copyright_area p {
 /**************************** Textile Page Css *****************************/
 /* Textile Banner Animation */
 .thread_animation {
-  height: 143vh;
+  height: 66.1375661376vw;
   position: relative;
+}
+@media (max-width: 600px) {
+  .thread_animation {
+    height: 91vh;
+  }
 }
 .thread_animation .bottle_img {
   position: absolute;
@@ -1397,6 +1402,11 @@ footer .copyright_area p {
   width: 27vw;
   height: 17.353vw;
 }
+@media (max-width: 600px) {
+  .thread_animation .bottle_01 {
+    top: 40vw;
+  }
+}
 .thread_animation .bottle_02 {
   left: 54vw;
   transform: translateX(-50%);
@@ -1404,11 +1414,21 @@ footer .copyright_area p {
   width: 7.981vw;
   height: 18.646vw;
 }
+@media (max-width: 600px) {
+  .thread_animation .bottle_02 {
+    top: 22vw;
+  }
+}
 .thread_animation .bottle_03 {
   top: 35vw;
   right: 0;
   width: 27.653vw;
   height: 6.469vw;
+}
+@media (max-width: 600px) {
+  .thread_animation .bottle_03 {
+    top: 57vw;
+  }
 }
 .thread_animation .bobbin {
   position: absolute;
@@ -1421,6 +1441,11 @@ footer .copyright_area p {
   top: 23vw;
   z-index: 1;
 }
+@media (max-width: 600px) {
+  .thread_animation .bobbin_01 {
+    top: 47vw;
+  }
+}
 .thread_animation .bobbin_02 {
   width: 14.666vw;
   height: 14.105vw;
@@ -1429,6 +1454,11 @@ footer .copyright_area p {
   transform: translateX(-50%);
   z-index: 3;
 }
+@media (max-width: 600px) {
+  .thread_animation .bobbin_02 {
+    top: 54.646vw;
+  }
+}
 .thread_animation .bobbin_03 {
   width: 14.886vw;
   height: 14.886vw;
@@ -1436,6 +1466,11 @@ footer .copyright_area p {
   left: 44.5vw;
   transform: translateX(-50%);
   z-index: 2;
+}
+@media (max-width: 600px) {
+  .thread_animation .bobbin_03 {
+    top: 45.646vw;
+  }
 }
 .thread_animation .thread {
   position: absolute;
@@ -1449,6 +1484,11 @@ footer .copyright_area p {
   width: 2.685vw;
   height: 6.712vw;
 }
+@media (max-width: 600px) {
+  .thread_animation .thread_01 {
+    top: 39.5vw;
+  }
+}
 .thread_animation .thread_02 {
   top: 33.5vw;
   left: 31vw;
@@ -1456,12 +1496,22 @@ footer .copyright_area p {
   width: 10.372vw;
   height: 4.076vw;
 }
+@media (max-width: 600px) {
+  .thread_animation .thread_02 {
+    top: 55.5vw;
+  }
+}
 .thread_animation .thread_03 {
   top: 33.5vw;
   right: 22vw;
   transform: translateX(-50%);
   width: 8.615vw;
   height: 3.857vw;
+}
+@media (max-width: 600px) {
+  .thread_animation .thread_03 {
+    top: 55.5vw;
+  }
 }
 .thread_animation .thread_vector {
   position: absolute;
@@ -1474,6 +1524,12 @@ footer .copyright_area p {
   left: 49vw;
   transform: translateX(-50%);
 }
+@media (max-width: 600px) {
+  .thread_animation .thread_vector_01 {
+    top: 63.4vw;
+    left: 48vw;
+  }
+}
 .thread_animation .thread_vector_02 {
   width: 6.955vw;
   height: 29.283vw;
@@ -1481,12 +1537,24 @@ footer .copyright_area p {
   left: 52vw;
   transform: translateX(-50%);
 }
+@media (max-width: 600px) {
+  .thread_animation .thread_vector_02 {
+    top: 61vw;
+    left: 50.5vw;
+  }
+}
 .thread_animation .thread_vector_03 {
   width: 6.955vw;
   height: 29.283vw;
   top: 36.5vw;
   left: 54vw;
   transform: translateX(-50%);
+}
+@media (max-width: 600px) {
+  .thread_animation .thread_vector_03 {
+    top: 61vw;
+    left: 53vw;
+  }
 }
 .thread_animation .line_vector {
   position: absolute;
@@ -1498,6 +1566,11 @@ footer .copyright_area p {
   top: 36.5vw;
   left: 34vw;
 }
+@media (max-width: 600px) {
+  .thread_animation .line_vector_01 {
+    top: 58.5vw;
+  }
+}
 .thread_animation .line_vector_02 {
   width: 2vw;
   height: 6.272vw;
@@ -1505,11 +1578,21 @@ footer .copyright_area p {
   left: 48vw;
   transform: translateX(-50%);
 }
+@media (max-width: 600px) {
+  .thread_animation .line_vector_02 {
+    top: 45vw;
+  }
+}
 .thread_animation .line_vector_03 {
   width: 7.053vw;
   height: 1.5vw;
   right: 33vw;
   top: 33.3vw;
+}
+@media (max-width: 600px) {
+  .thread_animation .line_vector_03 {
+    top: 55.3vw;
+  }
 }
 .thread_animation .marquee {
   position: absolute;
@@ -1527,11 +1610,21 @@ footer .copyright_area p {
     top: 13.2275132275vw;
   }
 }
+@media (max-width: 600px) {
+  .thread_animation .marquee_one {
+    top: 26.455026455vw;
+  }
+}
 .thread_animation .marquee_two {
   top: 29.7619047619vw;
 }
 @media (max-width: 768px) {
   .thread_animation .marquee_two {
     top: 46.2962962963vw;
+  }
+}
+@media (max-width: 600px) {
+  .thread_animation .marquee_two {
+    top: 59.5238095238vw;
   }
 }/*# sourceMappingURL=style.css.map */

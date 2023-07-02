@@ -1629,7 +1629,10 @@ footer{
 
 /* Textile Banner Animation */
 .thread_animation{
-    height: 143vh;
+    height: 1000 * $desk + vw;
+    @media #{$mobile}{
+        height: 91vh;
+    }
     position: relative;
     .bottle_img{
         position: absolute;
@@ -1641,6 +1644,10 @@ footer{
         left: 0;
         width: 27vw;
         height: 17.353vw;
+
+        @media #{$mobile}{
+            top: 40vw;
+        }
     }
     
     .bottle_02{
@@ -1649,6 +1656,10 @@ footer{
         top: 0;
         width: 7.981vw;
         height: 18.646vw;
+
+        @media #{$mobile}{
+            top: 22vw;
+        }
     }
     
     .bottle_03{
@@ -1656,6 +1667,10 @@ footer{
         right: 0;
         width: 27.653vw;
         height: 6.469vw;
+
+        @media #{$mobile}{
+            top: 57vw;
+        }
     }
     
     .bobbin{
@@ -1669,6 +1684,10 @@ footer{
         right: 37vw;
         top: 23vw;
         z-index: 1;
+
+        @media #{$mobile}{
+            top: 47vw;
+        }
     }
     
     .bobbin_02{
@@ -1678,6 +1697,10 @@ footer{
         left: 46vw;
         transform: translateX(-50%);
         z-index: 3;
+
+        @media #{$mobile}{
+            top: 54.646vw;
+        }
     }
     
     .bobbin_03{
@@ -1687,6 +1710,10 @@ footer{
         left: 44.5vw;
         transform: translateX(-50%);
         z-index: 2;
+
+        @media #{$mobile}{
+            top: 45.646vw;
+        }
     }
     
     .thread{
@@ -1701,6 +1728,9 @@ footer{
         transform: translateX(-50%);
         width: 2.685vw;
         height: 6.712vw;
+        @media #{$mobile}{
+            top: 39.5vw;
+        }
     }
     
     .thread_02{
@@ -1709,6 +1739,10 @@ footer{
         transform: translateX(-50%);
         width: 10.372vw;
         height: 4.076vw;
+
+        @media #{$mobile}{
+            top: 55.5vw;
+        }
     }
     
     .thread_03{
@@ -1717,6 +1751,9 @@ footer{
         transform: translateX(-50%);
         width: 8.615vw;
         height: 3.857vw;
+        @media #{$mobile}{
+            top: 55.5vw;
+        }
     }
     
     .thread_vector{
@@ -1730,6 +1767,10 @@ footer{
         top: 39vw;
         left: 49vw;
         transform: translateX(-50%);
+        @media #{$mobile}{
+            top: 63.4vw;
+            left: 48vw;
+        }
     }
     
     .thread_vector_02{
@@ -1738,6 +1779,10 @@ footer{
         top: 36.5vw;
         left: 52vw;
         transform: translateX(-50%);
+        @media #{$mobile}{
+            top: 61vw;
+            left: 50.5vw;
+        }
     }
     
     .thread_vector_03{
@@ -1746,6 +1791,10 @@ footer{
         top: 36.5vw;
         left: 54vw;
         transform: translateX(-50%);
+        @media #{$mobile}{
+            top: 61vw;
+            left: 53vw;
+        }
     }
     
     .line_vector{
@@ -1758,6 +1807,9 @@ footer{
         height: 2.123vw;
         top: 36.5vw;
         left: 34vw;
+        @media #{$mobile}{
+            top: 58.5vw
+        }
     }
     
     .line_vector_02{
@@ -1766,6 +1818,9 @@ footer{
         top: 23vw;
         left: 48vw;
         transform: translateX(-50%);
+        @media #{$mobile}{
+            top: 45vw
+        }
     }
     
     .line_vector_03{
@@ -1773,6 +1828,9 @@ footer{
         height: 1.5vw;
         right: 33vw;
         top: 33.3vw;
+        @media #{$mobile}{
+            top: 55.3vw
+        }
     }
     
     .marquee{
@@ -1789,12 +1847,19 @@ footer{
         @media #{$tablet}{
             top: 200 * $desk + vw;
         }
+        @media #{$mobile}{
+            top: 400 * $desk + vw;
+        }
     }
     
     .marquee_two{
         top: 450 * $desk + vw;
         @media #{$tablet}{
             top: 700 * $desk + vw;
+        }
+
+        @media #{$mobile}{
+            top: 900 * $desk + vw;
         }
     }
 }
